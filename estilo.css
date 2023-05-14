@@ -13,13 +13,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 150vh;
     background: var(--clr);
 
 }
 
 .login {
-    width: 320px;
+    width: 325px;
     height: 420px;
     border: 5px solid #000;
     border-radius: 80px 0px 80px 0px;
@@ -40,7 +40,7 @@ body {
     
 }
 
-.usuario {
+.perfil {
     border-radius: 50%;
     position: absolute;
     top: -50px;
@@ -52,48 +52,12 @@ h1 {
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 20px;
-    letter-spacing: 10px;
+    letter-spacing: 0,5px;
     text-transform: uppercase;
     text-align: center;
     font-size: 25px;
-}
+    
 
-.login p {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-
-.login input {
-    width: 100%;
-    margin-bottom: 21px;
-}
-
-.login input [ type="text"],
-input[type="password"] {
-    border: none;
-    border-bottom: 1px solid white;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: white;
-    font-size: 1px;
-}
-
-.login input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 35px;
-    color: #000;
-    background: #fff;
-    border-radius: 20px;
-    transition: 0.2s;
-}
-
-.login input[type="submit"]:hover {
-    cursor: pointer;
-    background: #fff;
-    transition: 0.2s;
 }
 
 .login a {
@@ -107,7 +71,13 @@ input[type="password"] {
 
 .login a:hover {
     transition: 0.2s;
-    color: rgb(246, 250, 1);
+    color: rgb(0, 5, 77);
+    
+}
+
+.login p {
+    font-weight: bold;
+    text-align: justify;
 }
 
 .btn{
@@ -123,10 +93,14 @@ input[type="password"] {
    
 }
 
-.btn:hover{
+.btn:hover {
     background:#0281f8;
     color:rgb(243, 237, 237);
     transition:background 1s;
        
 }
 
+.social p{
+    text-align: center;
+
+}
