@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+   
+    background-image: url("/Images/fundo.jpg");
+    
+}
+
+div.galeria-modal{
+
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4%;
+    visibility: hidden;
+    z-index: 5;
+
+}
+
+div.galeria-modal img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+    background-color: aliceblue;
+}
+
+div.galeria-modal span{
+
+    position: absolute;
+    top:20px;
+    right: 20px;
+    font-size: 22px;
+    color: rgb(255, 2, 2);
+    cursor: pointer;
+    
+}
+
+section{
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+div.galeria {
+
+    width: 100%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 20vh;
+    
+}
+
+div.galeria div.single-galeria{
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 275px;
+    margin: 0.5vw;
+    overflow: hidden;
+    width: 95%;
+    height: 95%;
+    box-shadow: 20px 20px 50px rgba(137, 0, 250, 0.5);
+    border-top: 1px solid rgba(0, 1, 82, 0.5);
+    border-left: 1px solid rgba(180, 3, 216, 0.5);
+}
+
+
+
+div.galeria div.single-galeria img{
+
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
+    
+
+}
+
+
+div.galeria div.single-galeria img:hover{
+
+transform: scale(1.1);
+
+}
+
+@media screen and (max-width: 764px) {
+
+    div.galeria{
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 15vh;
+       
+    }
+    
+}
+

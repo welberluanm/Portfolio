@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center ;
     min-width: 100vh;
-    background-image: url("Images/fundo.jpg");
+    background-image: url("/Images/fundo.jpg");
 }
 
 .container{
@@ -64,7 +64,7 @@ body{
 .container .card .content h2{
 
     position: absolute;
-    top: -30px;
+    top: -35px;
     right: 5px;
     font-size: 8em;
     color: rgba(255, 255, 255, 0.08);
