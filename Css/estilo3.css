@@ -33,7 +33,7 @@ nav a::after{
 
     content: " ";
     width: 0%;
-    height: 4px;
+    height: 5px;
     background-color: rgb(15, 243, 8);
     position: absolute;
     bottom: 0;
@@ -54,7 +54,10 @@ nav a:hover::after{
 
 body{
    
+    
     background-image: url("/Images/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 

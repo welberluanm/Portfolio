@@ -12,6 +12,8 @@ body{
     align-items: center ;
     min-width: 100vh;
     background-image: url("/Images/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -102,7 +104,7 @@ body{
 
 .container .card:hover {
 
-    background:#0281f8;
+    background:rgba(137, 0, 250, 0.5);
     color:rgb(0, 4, 66);
     transition:background 1s;
 
